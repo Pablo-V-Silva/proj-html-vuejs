@@ -30,43 +30,20 @@
               id="navbarNav"
             >
               <ul class="navbar-nav align-items-center">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >HOME</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >ABOUT</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >PRICES</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >COURSES</a
-                  >
-                  <!-- IMG DINAMICA -->
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >LOCATION</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >BLOG</a
-                  >
-                </li>
-                <li class="">
-                  <button type="button" class="btn rounded-pill greenBtn py-1">
-                    BOOK NOW
-                  </button>
+                <li
+                  class="nav-item d-flex align-items-center"
+                  v-for="link in links"
+                  :key="link.link"
+                >
+                  <a class="nav-link active" aria-current="page" href="#">{{
+                    link.link.toUpperCase()
+                  }}</a>
+                  <span v-if="link.btn" class="newItem rounded-2">NEW</span>
                 </li>
               </ul>
+              <button type="button" class="btn rounded-pill greenBtn py-1">
+                BOOK NOW
+              </button>
             </div>
           </div>
         </nav>
@@ -83,7 +60,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    links: Array,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -93,6 +74,7 @@ export default {};
 .contacts {
   background-color: $header_background;
   color: $headerUp_text;
+  font-size: 0.8em;
 }
 
 .jumbo {
@@ -108,16 +90,22 @@ export default {};
     li {
       padding: 0 0.5rem;
 
-      .greenBtn {
+      .newItem {
         background-color: $principal_color;
         color: white;
-        padding: 0.6rem 2rem;
+        font-size: 0.7em;
+        padding: 3px 6px;
       }
+    }
+    .greenBtn {
+      background-color: $principal_color;
+      color: white;
+      padding: 0.6rem 2rem;
     }
   }
 
   .vignet {
-    padding: 7rem 0;
+    padding: 9rem 0;
   }
 }
 </style>

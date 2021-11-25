@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <SiteHeader />
+    <SiteHeader :links="linksArray" />
     <SiteMain />
     <SiteFooter />
   </div>
@@ -12,6 +12,18 @@ import SiteMain from "./components/SiteMain.vue";
 import SiteFooter from "./components/SiteFooter.vue";
 
 export default {
+  data() {
+    return {
+      linksArray: [
+        { link: "home" },
+        { link: "about" },
+        { link: "prices" },
+        { link: "courses", btn: true },
+        { link: "location" },
+        { link: "blog" },
+      ],
+    };
+  },
   components: {
     SiteHeader,
     SiteMain,
