@@ -9,13 +9,7 @@
         </div>
       </div>
     </div>
-    <div class="jumbo position-relative">
-      <img
-        src="../assets/img/homepage-hero-background.jpg"
-        alt=""
-        width="100%"
-        class="heroImage"
-      />
+    <div class="jumbo">
       <div class="links">
         <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container py-3">
@@ -77,6 +71,13 @@
           </div>
         </nav>
       </div>
+
+      <div class="vignet container">
+        <h1 class="text-light">Drive width Avada</h1>
+        <p class="text-light">
+          We offer the finest driving tuition money can buy
+        </p>
+      </div>
     </div>
   </header>
 </template>
@@ -95,20 +96,11 @@ export default {};
 }
 
 .jumbo {
+  background: url("../assets/img/homepage-hero-background.jpg");
+  background-color: rgba(0, 0, 0, 0.42);
+  background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
-
-  .heroImage {
-    position: absolute;
-    z-index: -1;
-    object-fit: contain;
-    background: rgb(63, 94, 251);
-    background: radial-gradient(
-      circle,
-      rgba(63, 94, 251, 0) 66%,
-      rgba(0, 0, 0, 0.5270483193277311) 88%
-    );
-  }
 
   .links {
     background-color: rgba(0, 0, 0, 0.522);
@@ -122,6 +114,10 @@ export default {};
         padding: 0.6rem 2rem;
       }
     }
+  }
+
+  .vignet {
+    padding: 7rem 0;
   }
 }
 </style>
