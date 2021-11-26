@@ -33,6 +33,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/scss/common.scss";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Outfit:wght@100;200;300;500;600&display=swap");
 

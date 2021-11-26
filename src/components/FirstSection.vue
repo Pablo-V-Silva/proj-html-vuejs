@@ -1,7 +1,7 @@
 <template>
   <div class="freelesson container">
     <div class="row row-cols-1 row-cols-md-2">
-      <div class="col py-5">
+      <div class="col py-5 d-flex flex-column justify-content-center">
         <h2 class="text-capitalize title">get behind the wheel</h2>
         <p class="subTitle">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
@@ -16,27 +16,55 @@
           omnis, inventore nemo laborum!
         </p>
       </div>
-      <div class="col card">
-        <h3 class="text-capitalize text-center titleCard fs-1">
-          first lesson free!
-        </h3>
-        <p class="text-center fs-5">
-          When you make a block booking with us your fisrt lesson is includeed
-          free
-        </p>
+      <div class="col position-relative">
+        <div class="card px-5">
+          <h3 class="text-capitalize text-center titleCard fs-2">
+            first lesson free!
+          </h3>
+          <p class="text-center pb-4">
+            When you make a block booking with us your fisrt lesson is includeed
+            free
+          </p>
 
-        <form action="" class="px-3">
-          <div class="name position-relative">
+          <form action="" class="">
+            <div class="name position-relative">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name*"
+                class="py-2 w-100 rounded"
+              />
+              <span><i class="far fa-id-badge icon"></i></span>
+            </div>
             <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Your Name*"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
               class="py-2 w-100 rounded"
             />
-            <span><i class="far fa-id-badge icon"></i></span>
-          </div>
-        </form>
+            <input
+              type="text"
+              name="telephone"
+              id="telephone"
+              placeholder="Your Telephone"
+              class="py-2 w-100 rounded"
+            />
+            <input
+              type="text"
+              name="location"
+              id="location"
+              placeholder="Your Location"
+              class="py-2 w-100 rounded"
+            />
+            <div class="text-center mb-3 mt-4">
+              <button class="greenBtn rounded-pill text-uppercase">
+                request a callback
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -66,18 +94,33 @@ p {
   padding: 2rem;
 }
 
-form {
-  #name {
-    border: 1px solid $headerUp_text;
-    padding-left: 0.5rem;
-  }
+.card {
+  margin: 0 4.5rem;
+  position: absolute;
+  top: -1.5rem;
+  -webkit-box-shadow: 0px 30px 50px 14px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 30px 50px 14px rgba(0, 0, 0, 0.4);
 
-  .icon {
-    position: absolute;
-    right: 0.5rem;
-    top: 50%;
-    transform: translate(0, -50%);
-    color: $headerUp_text;
+  form {
+    padding-bottom: 1.5rem;
+
+    #name,
+    #email,
+    #telephone,
+    #location {
+      border: 1px solid $headerUp_text;
+      padding-left: 0.5rem;
+      margin-bottom: 0.7rem;
+      background-color: rgba(212, 212, 212, 0.438);
+    }
+
+    .icon {
+      position: absolute;
+      right: 0.5rem;
+      top: 44%;
+      transform: translate(0, -50%);
+      color: $headerUp_text;
+    }
   }
 }
 </style>

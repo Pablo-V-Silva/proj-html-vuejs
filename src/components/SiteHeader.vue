@@ -53,7 +53,7 @@
               </ul>
 
               <!-- ordinazione del libro di sicurezza alla guida -->
-              <button type="button" class="btn rounded-pill greenBtn py-1">
+              <button type="button" class="rounded-pill greenBtn">
                 BOOK NOW
               </button>
             </div>
@@ -123,11 +123,6 @@ export default {
         font-size: 0.7em;
         padding: 3px 6px;
       }
-    }
-    .greenBtn {
-      background-color: $principal_color;
-      color: white;
-      padding: 0.6rem 2rem;
     }
   }
 
