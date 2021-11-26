@@ -1,17 +1,17 @@
 <template>
   <main>
-    <FirstSection />
-    <SecondSection />
+    <FreeLesson />
+    <Courses />
   </main>
 </template>
 
 <script>
-import FirstSection from "./FirstSection.vue";
-import SecondSection from "./SecondSection.vue";
+import FreeLesson from "./FreeLesson.vue";
+import Courses from "./Courses.vue";
 export default {
   components: {
-    FirstSection,
-    SecondSection,
+    FreeLesson,
+    Courses,
   },
 };
 </script>
