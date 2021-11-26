@@ -63,8 +63,8 @@
 
       <!-- frase motivazionale dell'azienda -->
       <div class="vignet container">
-        <h1 class="text-light">Drive width Avada</h1>
-        <p class="text-light">
+        <h1 class="text-light h-title">Drive width Avada</h1>
+        <p class="text-light h-paragrap fw-light">
           We offer the finest driving tuition money can buy
         </p>
 
@@ -133,6 +133,14 @@ export default {
 
   .vignet {
     padding: 9rem 0;
+
+    .h-title {
+      font-size: 3.5rem;
+    }
+
+    .h-paragrap {
+      font-size: 1.5rem;
+    }
 
     .products {
       position: fixed;

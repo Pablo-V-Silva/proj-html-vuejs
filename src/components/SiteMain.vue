@@ -1,9 +1,16 @@
 <template>
-  <main></main>
+  <main>
+    <FirstSection />
+  </main>
 </template>
 
 <script>
-export default {};
+import FirstSection from "./FirstSection.vue";
+export default {
+  components: {
+    FirstSection,
+  },
+};
 </script>
 
 <style>
