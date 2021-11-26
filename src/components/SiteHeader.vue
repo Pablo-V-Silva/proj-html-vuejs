@@ -53,7 +53,7 @@
               </ul>
 
               <!-- ordinazione del libro di sicurezza alla guida -->
-              <button type="button" class="rounded-pill greenBtn">
+              <button type="button" class="rounded-pill mainBtn">
                 BOOK NOW
               </button>
             </div>

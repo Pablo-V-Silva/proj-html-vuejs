@@ -59,7 +59,7 @@
               class="py-2 w-100 rounded"
             />
             <div class="text-center mb-3 mt-4">
-              <button class="greenBtn rounded-pill text-uppercase">
+              <button class="mainBtn rounded-pill text-uppercase">
                 request a callback
               </button>
             </div>
