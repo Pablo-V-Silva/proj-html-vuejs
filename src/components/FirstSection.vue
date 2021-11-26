@@ -16,7 +16,28 @@
           omnis, inventore nemo laborum!
         </p>
       </div>
-      <div class="col"></div>
+      <div class="col card">
+        <h3 class="text-capitalize text-center titleCard fs-1">
+          first lesson free!
+        </h3>
+        <p class="text-center fs-5">
+          When you make a block booking with us your fisrt lesson is includeed
+          free
+        </p>
+
+        <form action="" class="px-3">
+          <div class="name position-relative">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name*"
+              class="py-2 w-100 rounded"
+            />
+            <span><i class="far fa-id-badge icon"></i></span>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </template>
@@ -29,7 +50,7 @@ export default {};
 @import "../assets/scss/variables.scss";
 
 .title {
-  font-size: 2.6rem;
+  font-size: 2.9rem;
 }
 
 .subTitle {
@@ -38,5 +59,25 @@ export default {};
 
 p {
   color: $headerUp_text;
+}
+
+.titleCard {
+  color: $principal_color;
+  padding: 2rem;
+}
+
+form {
+  #name {
+    border: 1px solid $headerUp_text;
+    padding-left: 0.5rem;
+  }
+
+  .icon {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: $headerUp_text;
+  }
 }
 </style>
