@@ -74,9 +74,12 @@
 export default {};
 </script>
 
-<style lang="scss" scope>
+<style scoped lang="scss" scope>
 @import "../assets/scss/variables.scss";
 
+.freelesson.container {
+  padding: 5rem 0;
+}
 .title {
   font-size: 2.9rem;
 }
@@ -97,7 +100,7 @@ p {
 .card {
   margin: 0 4.5rem;
   position: absolute;
-  top: -1.5rem;
+  top: -7.5rem;
   -webkit-box-shadow: 0px 30px 50px 14px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 30px 50px 14px rgba(0, 0, 0, 0.4);
 
