@@ -49,6 +49,20 @@
           </div>
         </div>
       </div>
+      <div class="bottomDesign position-absolute">
+        <img
+          class="bottomBanner left"
+          src="../assets/img/latestnews-bottom.png"
+          alt=""
+          width="100%"
+        />
+        <img
+          class="bottomBanner right"
+          src="../assets/img/latestnews-bottom.png"
+          alt=""
+          width="100%"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -109,6 +123,7 @@ export default {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-color: $courses_bg;
+  z-index: -1;
 
   .infocourse {
     position: absolute;
@@ -127,6 +142,30 @@ export default {
       border-radius: 0.25rem;
       -webkit-box-shadow: 0px 30px 50px 14px rgba(0, 0, 0, 0.4);
       box-shadow: 0px 30px 50px 14px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .bottomDesign {
+    background-color: #d0d9df;
+    height: 160px;
+    width: 100%;
+    bottom: -159px;
+    z-index: -2;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    .bottomBanner {
+      position: absolute;
+    }
+
+    .bottomBanner.left {
+      left: 50%;
+      transform: rotate(180deg);
+    }
+
+    .bottomBanner.right {
+      right: 50%;
+      transform: rotate(180deg);
     }
   }
 }
