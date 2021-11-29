@@ -62,7 +62,6 @@ export default {
 
 .latestBanner {
   position: relative;
-  z-index: -1;
   background-image: url("../assets/img/latestnews-background.jpg");
   padding: 27rem 0;
   background-size: cover;

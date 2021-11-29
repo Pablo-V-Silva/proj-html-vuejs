@@ -63,7 +63,7 @@
 
       <!-- frase motivazionale dell'azienda -->
       <div class="vignet container">
-        <h1 class="text-light h-title">Drive width Avada</h1>
+        <h1 class="text-light h-title">Drive with Avada</h1>
         <p class="text-light h-paragrap fw-light">
           We offer the finest driving tuition money can buy
         </p>
@@ -123,6 +123,11 @@ export default {
         font-size: 0.7em;
         padding: 3px 6px;
       }
+
+      a:hover {
+        color: greenyellow;
+        border-bottom: 2px solid greenyellow;
+      }
     }
   }
 
@@ -141,6 +146,7 @@ export default {
       position: fixed;
       right: 1rem;
       top: 7.7rem;
+      z-index: 20;
 
       .cardproduct {
         width: 65px;

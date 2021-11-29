@@ -125,7 +125,6 @@ export default {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-color: $courses_bg;
-  z-index: -1;
 
   .infocourse {
     position: absolute;

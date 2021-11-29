@@ -4,4 +4,9 @@
   padding: 0.5rem 1rem;
   border: 1px solid gray;
   width: fit-content;
+
+  &:hover {
+    background-color: #249900;
+    transition: 0.5s;
+  }
 }

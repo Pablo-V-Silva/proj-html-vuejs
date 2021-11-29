@@ -73,6 +73,10 @@ export default {
     border-top: 7px solid $principal_color;
     border-radius: 1rem;
 
+    &:hover {
+      border-top: 7px solid greenyellow;
+    }
+
     .forBorder {
       background-color: white;
       border-radius: 1rem;
