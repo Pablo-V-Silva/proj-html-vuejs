@@ -39,7 +39,7 @@
         </div>
         <div class="col text-center">
           <img src="../assets/img/footer-ad-grid.png" alt="" width="100%" />
-          <button class="mainBtn rounded-pill text-center mt-4">
+          <button class="mainBtn rounded-pill text-center mt-4 text-uppercase">
             book now
           </button>
         </div>
