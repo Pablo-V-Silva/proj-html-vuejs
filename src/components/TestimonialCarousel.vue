@@ -111,8 +111,10 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  padding: 5rem 0 14rem;
+  padding: 10rem 0 14rem;
   position: relative;
+  top: 22rem;
+  z-index: -3;
 
   p {
     color: $coursesTxt_color;

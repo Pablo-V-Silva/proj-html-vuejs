@@ -20,28 +20,19 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row row-cols-3">
-        <div class="col">
-          <div class="card">
-            <img src="" alt="" />
-            <h4>nome</h4>
-            <div class="social"></div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-              quam.
-            </p>
-          </div>
-        </div>
-        <div class="col"></div>
-        <div class="col"></div>
-      </div>
+    <div class="container position-relative">
+      <InstructureCard />
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import InstructureCard from "./InstructurCard.vue";
+export default {
+  components: {
+    InstructureCard,
+  },
+};
 </script>
 
 <style scoped lang="scss">
