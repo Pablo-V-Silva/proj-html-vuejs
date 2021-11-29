@@ -20,7 +20,7 @@
 export default {};
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 @import "../assets/scss/variables.scss";
 span {
   color: rgb(44, 146, 35);

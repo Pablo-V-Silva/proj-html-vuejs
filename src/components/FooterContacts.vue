@@ -1,6 +1,6 @@
 <template>
   <div class="contactsFooter">
-    <div class="container">
+    <div class="container pb-5">
       <div class="row row-cols-4 g-5">
         <div class="col">
           <img src="../assets/img/avada-drivers-logo-1x.png" alt="" />
