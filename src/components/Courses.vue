@@ -105,6 +105,8 @@ export default {
   background-size: cover;
   background-position: center;
   padding: 4.8rem 0;
+  position: relative;
+  z-index: -1;
 }
 
 .newCorner {

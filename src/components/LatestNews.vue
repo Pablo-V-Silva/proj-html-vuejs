@@ -61,6 +61,8 @@ export default {
 @import "../assets/scss/variables.scss";
 
 .latestBanner {
+  position: relative;
+  z-index: -1;
   background-image: url("../assets/img/latestnews-background.jpg");
   padding: 27rem 0;
   background-size: cover;

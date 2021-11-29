@@ -1,9 +1,16 @@
 <template>
-  <footer></footer>
+  <footer>
+    <FooterContacts />
+  </footer>
 </template>
 
 <script>
-export default {};
+import FooterContacts from "./FooterContacts.vue";
+export default {
+  components: {
+    FooterContacts,
+  },
+};
 </script>
 
 <style>
