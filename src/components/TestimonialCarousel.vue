@@ -111,9 +111,9 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  padding: 10rem 0 14rem;
+  padding: 10rem 0 19rem;
   position: relative;
-  top: 22rem;
+  margin-top: 22rem;
   z-index: -3;
 
   p {

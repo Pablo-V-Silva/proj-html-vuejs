@@ -5,6 +5,7 @@
     <Referreal />
     <Instructor />
     <TestimonialCarousel />
+    <LatestNews />
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import Courses from "./Courses.vue";
 import Referreal from "./Referreal.vue";
 import Instructor from "./Instructor.vue";
 import TestimonialCarousel from "./TestimonialCarousel.vue";
+import LatestNews from "./LatestNews.vue";
 
 export default {
   components: {
@@ -22,6 +24,7 @@ export default {
     Referreal,
     Instructor,
     TestimonialCarousel,
+    LatestNews,
   },
 };
 </script>
